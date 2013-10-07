@@ -154,7 +154,6 @@ INSTALLED_APPS = (
     'cms.plugins.flash',
     'cms.plugins.googlemap',
     'cms.plugins.link',
-    # 'cms.plugins.snippet', # security warning (see: http://docs.django-cms.org/en/develop/getting_started/plugin_reference.html#snippets-plugin)# Optional Django CMS plugins
     'cms.plugins.file',
     'cms.plugins.picture',
     'cms.plugins.teaser',
@@ -164,6 +163,9 @@ INSTALLED_APPS = (
 
     # Django admin
     'django.contrib.admin',
+
+    # Custom Django app
+    'speakers',
 )
 
 # A sample logging configuration. The only tangible logging
@@ -206,5 +208,4 @@ CMS_TEMPLATES = (
 LANGUAGES = [
     ('en', gettext('en')),
     ('it', gettext('it')),
-    
 ]
