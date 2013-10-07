@@ -1,13 +1,6 @@
-===============================
-DevFest
-===============================
-
-.. image:: https://badge.fury.io/py/django-devfest.png
-    :target: http://badge.fury.io/py/django-devfest
-
-.. image:: https://pypip.in/d/django-devfest/badge.png
-    :target: https://crate.io/packages/django-devfest?version=latest
-
+===========
+GDG DevFest
+===========
 
 DevFest website for all italian GDGs
 
@@ -40,9 +33,17 @@ Enter inside ``django_cms`` then prepare your database (sqlite as default) and r
     python manage.py cms check --settings=django_cms.settings.dev
     python manage.py runserver --settings=django_cms.settings.dev
 
-Create your first page with Django CMS admin (``http://localhost:8000/admin``)!
+Create your first page with Django CMS admin (``http://localhost:8000``)!
 
 Features
 --------
 
-TODO
+* DevFest homepage is fully customizable with a default stock template
+
+Credits
+-------
+
+Thanks to `GDG Fresno`_ for this template. Original template is available on GDG-X `repository`_.
+
+.. _GDG Fresno: http://gdgfresno.com
+.. _repository: https://github.com/gdg-x/devfest-template
