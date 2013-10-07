@@ -160,6 +160,7 @@ INSTALLED_APPS = (
     'cms.plugins.video',
     
     'reversion',
+    'django_gravatar',
 
     # Django admin
     'django.contrib.admin',
