@@ -31,6 +31,12 @@ h1, h5 {
     margin-bottom: 20px;
 }
 
+.img-gravatar {
+    -webkit-border-radius: 60px;
+    -moz-border-radius: 60px;
+    border-radius: 60px;
+}
+
 .navbar-nav li a {
     border-bottom: 5px solid rgb(34, 34, 34);
 }
@@ -73,6 +79,15 @@ h1, h5 {
 .navbar-nav li.yellow a:hover,
 .navbar-nav li.active.yellow:hover a {
     background-color: rgb(251, 201, 68);
+}
+
+/* Font Awesome overrides */
+.icon-2x {
+    margin-right: 8px;
+}
+
+a:hover  {
+    text-decoration: none;
 }
 
 /* Windows phone 8 and IE 10 fix */

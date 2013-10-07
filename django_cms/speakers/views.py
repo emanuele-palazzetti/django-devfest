@@ -5,3 +5,4 @@ from .models import Speaker
 
 class SpeakerList(ListView):
     model = Speaker
+    context_object_name = 'speakers'
