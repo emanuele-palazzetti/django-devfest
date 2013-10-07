@@ -1,4 +1,83 @@
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    background-image: url('../images/devfest-wallpaper.png');
+    background-color: rgb(229, 229, 229);
+    font-family: 'Roboto', sans-serif;
+    color: #505050;
 }
+
+h1, h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.lead {
+    font-weight: 300;
+}
+
+.bordered-shadowed {
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .05);
+    border: 1px solid rgb(195, 195, 195);
+    background-color: #fff;
+}
+
+.box-fluid {
+    float: left;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.box-description {
+    margin-bottom: 20px;
+}
+
+.navbar-nav li a {
+    border-bottom: 5px solid rgb(34, 34, 34);
+}
+
+.navbar-nav li.active.red a,
+.navbar-nav li.red a:hover {
+    border-bottom: 5px solid rgb(213, 63, 52);
+}
+
+.navbar-nav li.active.blue a,
+.navbar-nav li.blue a:hover {
+    border-bottom: 5px solid rgb(68, 134, 248);
+}
+
+.navbar-nav li.active.green a,
+.navbar-nav li.green a:hover {
+    border-bottom: 5px solid rgb(10, 162, 90);
+}
+
+.navbar-nav li.active.yellow a,
+.navbar-nav li.yellow a:hover {
+    border-bottom: 5px solid rgb(251, 201, 68);
+}
+
+.navbar-nav li.red a:hover,
+.navbar-nav li.active.red:hover a {
+    background-color: rgb(213, 63, 52);
+}
+
+.navbar-nav li.blue a:hover,
+.navbar-nav li.active.blue:hover a {
+    background-color: rgb(68, 134, 248);
+}
+
+.navbar-nav li.green a:hover,
+.navbar-nav li.active.green:hover a {
+    background-color: rgb(10, 162, 90);
+}
+
+.navbar-nav li.yellow a:hover,
+.navbar-nav li.active.yellow:hover a {
+    background-color: rgb(251, 201, 68);
+}
+
+/* Windows phone 8 and IE 10 fix */
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
