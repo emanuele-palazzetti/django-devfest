@@ -1,5 +1,5 @@
-# Django CMS 3 beta
-https://github.com/divio/django-cms/archive/3.0.0.beta2.zip
+# Django CMS 3 (HEAD)
+-e git://github.com/divio/django-cms.git@1138ee56b1638cb444edaac72ac55a95940cdd3e#egg=djangocms
 
 # Django CMS dependencies
 Django==1.5.4
