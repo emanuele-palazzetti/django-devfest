@@ -9,7 +9,14 @@ class Speaker(CMSPlugin):
     last_name = models.CharField(_("Last name"), max_length=50)
     email = models.EmailField(_("Email"), null=True, blank=True)
     assignment = models.CharField(_("Company assignment"), max_length=200, null=True, blank=True)
+
+    # Extra informations
     bio = models.TextField(_("Biography"), max_length=2000, null=True, blank=True)
+    avatar = models.ImageField(_("Avatar"), upload_to='avatar/', null=True, blank=True)
+
+    # Talk information (TODO make a FK to manage multiple talks in the future)
+    talk_title = models.CharField(_("Talk title"), max_length=255, null=True, blank=True)
+    talk_abstract = models.TextField(_("Talk abstract"), null=True, blank=True)
 
     # Social links
     social_website = models.URLField(_("Website"), null=True, blank=True)
@@ -22,6 +29,6 @@ class Speaker(CMSPlugin):
     def full_name(self):
         return u'{0} {1}'.format(self.first_name, self.last_name)
 
-    # Django CMS 3 beta2 doesn't support Python 3
+    # TODO Django CMS 3 beta2 doesn't support Python 3
     def __unicode__(self):
         return self.full_name
