@@ -1,8 +1,8 @@
 # Django CMS 3 (HEAD)
--e git://github.com/divio/django-cms.git@1138ee56b1638cb444edaac72ac55a95940cdd3e#egg=djangocms
+https://github.com/divio/django-cms/archive/1138ee56b1638cb444edaac72ac55a95940cdd3e.zip
 
 # Django CMS dependencies
-Django==1.5.4
+Django==1.5.5
 django-classy-tags==0.4
 South==0.8.2
 html5lib==1.0b1
