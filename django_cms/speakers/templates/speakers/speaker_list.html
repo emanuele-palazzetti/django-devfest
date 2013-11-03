@@ -9,15 +9,20 @@
             <div class="col-lg-12 col-xs-12 bordered-shadowed box-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-2 col-md-2 text-center">
-                        <img class="img-gravatar" src="{% gravatar_url speaker.email 120 %}" />
+                        {% if speaker.avatar %}
+                            <img class="img-gravatar" src="{{ speaker.avatar.url }}" height="120" width="120" />
+                        {% else %}
+                            <img class="img-gravatar" src="{% gravatar_url speaker.email 120 %}" />
+                        {% endif %}
                     </div>
                     <div class="col-xs-12 col-sm-10 col-md-10">
                         <h1>{{ speaker.full_name }} <small>{{ speaker.assignment }}</small></h1>
+                        <h2>{{ speaker.talk_title }}</h2>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-sm-offset-2">
-                        <p class="lead">{{ speaker.bio }}</p>
+                        <p>{{ speaker.talk_abstract }}</p>
                     </div>
                 </div>
                 <div class="row">
