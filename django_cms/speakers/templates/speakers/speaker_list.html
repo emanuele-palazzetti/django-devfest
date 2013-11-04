@@ -16,13 +16,14 @@
                         {% endif %}
                     </div>
                     <div class="col-xs-12 col-sm-10 col-md-10">
-                        <h1>{{ speaker.full_name }} <small>{{ speaker.assignment }}</small></h1>
-                        <h2>{{ speaker.talk_title }}</h2>
+                        <h1>{{ speaker.full_name }}</h1>
+                        <h4>{{ speaker.assignment }}</h4>
+                        <h3>{{ speaker.talk_title }}</h3>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-sm-offset-2">
-                        <p>{{ speaker.talk_abstract }}</p>
+                        <p>{{ speaker.talk_abstract|linebreaks }}</p>
                     </div>
                 </div>
                 <div class="row">
