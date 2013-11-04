@@ -5,8 +5,12 @@ TEMPLATE_DEBUG = DEBUG
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'timely.db',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'devfest',
+        'USER': 'devel',
+        'PASSWORD': '123456',
+        'HOST': '',
+        'PORT': '',
     }
 }
 

@@ -1,7 +1,6 @@
 # Development requirements
 -r base.txt
 
-psycopg2==2.5.1
 dj-database-url==0.2.2
 gunicorn==18.0
 django-storages==1.1.4
