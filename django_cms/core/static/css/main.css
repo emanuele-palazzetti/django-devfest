@@ -16,6 +16,10 @@ h2, h3, h4, h5 {
     font-weight: 200;
 }
 
+p {
+    font-family: 'OpenSans', sans-serif;
+}
+
 .bordered-shadowed {
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, .05);
     border: 1px solid rgb(195, 195, 195);
@@ -26,6 +30,10 @@ h2, h3, h4, h5 {
     float: left;
     padding: 30px;
     margin-bottom: 30px;
+}
+
+.row {
+    margin-bottom: 5px;
 }
 
 /* Used by CardUi on small devices */
@@ -44,6 +52,10 @@ h2, h3, h4, h5 {
     -webkit-border-radius: 60px;
     -moz-border-radius: 60px;
     border-radius: 60px;
+}
+
+.img-responsive {
+    display: inline-block;
 }
 
 .navbar-nav li a {
