@@ -1,47 +1,50 @@
-
 {% extends "base.html" %}
 {% load cms_tags %}
 
 {% block base_content %}
     <div class="row">
-        <div class="col-lg-12 col-xs-12 bordered-shadowed box-fluid">
-            <div class="col-xs-12 col-sm-4 col-md-4 hidden-xs">
+        <div class="col-xs-12 bordered-shadowed box-fluid">
+            <div class="row">
+            <div class="col-xs-12">
                 {% placeholder devfest_image %}
             </div>
-            <div class="col-xs-12 col-sm-8 col-md-8 text-center">
+                </div>
+                <div class="row">
+            <div class="col-xs-12">
                 {% placeholder description %}
             </div>
+                    </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-12 col-xs-12 bordered-shadowed box-fluid">
-            <div class="col-lg-12 col-xs-12 box-description text-center">
+        <div class="col-xs-12 bordered-shadowed box-fluid">
+            <div class="col-xs-12 box-description text-center">
                 {% placeholder location_description %}
             </div>
-            <div class="col-lg-12 col-xs-12 text-center">
+            <div class="col-xs-12 text-center">
                 {% placeholder google_maps_location %}
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-12 col-xs-12 bordered-shadowed box-fluid">
-            <div class="col-lg-12 col-xs-12 box-description text-center">
+        <div class="col-xs-12 bordered-shadowed box-fluid">
+            <div class="col-xs-12 box-description text-center">
                 {% placeholder sponsor_description %}
             </div>
-            <div class=" text-center">
+            <div class="col-xs-12 text-center">
                 {% placeholder sponsor_images %}
             </div>
         </div>
     </div>
 
     <div class="row">
-        <div class="col-lg-12 col-xs-12 bordered-shadowed box-fluid">
-            <div class="col-lg-12 col-xs-12 box-description text-center">
+        <div class="col-xs-12 bordered-shadowed box-fluid">
+            <div class="col-xs-12 box-description text-center">
                 {% placeholder organizers_description %}
             </div>
-            <div class="col-lg-12 col-xs-12 text-center">
+            <div class="col-xs-12 text-center">
                 {% placeholder organizers_images %}
             </div>
         </div>
