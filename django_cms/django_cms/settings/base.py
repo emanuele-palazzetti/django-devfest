@@ -163,7 +163,7 @@ INSTALLED_APPS = (
     'cms.plugins.picture',
     'cms.plugins.teaser',
     'cms.plugins.video',
-    
+
     'reversion',
     'django_gravatar',
 
