@@ -209,6 +209,7 @@ gettext = lambda s: s
 # Django CMS configurations
 CMS_TEMPLATES = (
     ('homepage.html', gettext('Home page')),
+    ('scheduling.html', gettext('Scheduling')),
 )
 
 LANGUAGES = [

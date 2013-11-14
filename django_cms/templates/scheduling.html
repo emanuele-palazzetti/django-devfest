@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block base_content %}
+    <div class="row">
+        <div class="col-xs-12 bordered-shadowed box-fluid">
+            <div class="col-xs-12 box-description text-center">
+                {% placeholder schedule_title %}
+            </div>
+            <div class="col-xs-12 text-center">
+                {% placeholder schedule_content %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
