@@ -13,6 +13,7 @@ class Speaker(CMSPlugin):
     # Extra informations
     bio = models.TextField(_("Biography"), max_length=2000, null=True, blank=True)
     avatar = models.ImageField(_("Avatar"), upload_to='avatar/', null=True, blank=True)
+    order = models.IntegerField(_("Order number"), default=0)
 
     # Talk information (TODO make a FK to manage multiple talks in the future)
     talk_title = models.CharField(_("Talk title"), max_length=255, null=True, blank=True)
