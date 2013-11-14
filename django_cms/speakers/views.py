@@ -4,5 +4,5 @@ from .models import Speaker
 
 
 class SpeakerList(ListView):
-    model = Speaker
+    queryset = Speaker.objects.order_by('order')
     context_object_name = 'speakers'
